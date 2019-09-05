@@ -1,3 +1,12 @@
-body{
-    background: black;
+.wrapper{
+    width: 500px;
+    margin: 0 auto;
+    /* text-align: center; */
+    border: 2px solid grey;
+}
+
+.done{
+    text-decoration: line-through;
+    color: grey;
+    opacity: 0.7;
 }
