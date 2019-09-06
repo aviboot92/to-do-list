@@ -1,4 +1,3 @@
-
 const li = $("li");
 li.on("click", function () {
     $(this).toggleClass("done");
@@ -18,10 +17,15 @@ nTd.keypress(function (event) {
     if ((event.charCode || event.which) === 13) {
         if ($(this).val() !== "") {
             const newTodo = $(this).val();
-            const newTdHtml = ('<li><span class="del">X</span> ' + newTodo + '</li>');
+            const newTdHtml = ('<li><span class="del"><i class="far fa-trash-alt"></i> </span> ' + newTodo + '</li>');
             $("ul").append(newTdHtml);
             console.log($(this));
             nTd.val("");
         }
     }
+});
+
+const plus = $(".fa-plus-square");
+plus.on("click",()=>{
+    nTd.toggleClass("d-none");
 });
