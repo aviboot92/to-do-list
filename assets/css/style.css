@@ -80,3 +80,14 @@ li:hover .del{
     transition: 0.3s;
     opacity: 1.0;
 }
+::-webkit-input-placeholder { /* Edge */
+    color: rgba(100, 100, 100, 0.3);
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer */
+    color: rgba(100, 100, 100, 0.3);
+  }
+  
+  ::placeholder {
+    color: rgba(100, 100, 100, 0.3);
+  }
