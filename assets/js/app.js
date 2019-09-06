@@ -21,6 +21,7 @@ nTd.keypress(function (event) {
             const newTdHtml = ('<li><span class="del">X</span> ' + newTodo + '</li>');
             $("ul").append(newTdHtml);
             console.log($(this));
+            nTd.val("");
         }
     }
 });
